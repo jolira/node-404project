@@ -10,6 +10,12 @@
     "mail": "dev@jolira.com",
     "url": "http://github.com/jolira/node-404project/issues"
   },
+  "bin": {
+    "404reporter": "./bin/404reporter"
+  },
+  "scripts": {
+    "prepublish": "npm prune"
+  },
   "main": "index",
   "engines": { "node": ">= 0.4.0 < 0.7.0" }
 }

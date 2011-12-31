@@ -1,0 +1,22 @@
+#!/usr/bin/env node
+
+var _404 = require('../lib/404project');
+
+process.on('uncaughtException', function(err) {
+  console.error(err.stack);
+});
+
+if (process.argv.length < 7 || process.argv.length > 8) {
+  console.error("usage: %s <userID> <key> <url> <ip> <ua> [<ts>]", process.argv[1]);
+}
+else {
+  var userID = process.argv[2];
+  var key = process.argv[3];
+  var url = process.argv[4];
+  var ip = process.argv[5];
+  var ua = process.argv[6];
+  var ts = process.argv[7];
+  var reporter = _404.create(userID, key);
+
+  reporter.report404(url, ip, ua, ts);
+}
