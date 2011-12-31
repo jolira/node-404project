@@ -30,3 +30,9 @@ app.get(function(request, response) {
 
 app.listen(3000);
 ```
+
+There is also a command-line tool:
+
+```
+bin/404reporter 636742678 aaaaaaaaaaaabbcccccccccccceeeeeeeeffffff "http://www.jolira.com/__phpamdin" 125.64.23.180 jakarta
+```
