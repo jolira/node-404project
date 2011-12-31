@@ -1,0 +1,15 @@
+{
+  "name": "404project",
+  "version": "0.0.1",
+  "description": "Report 404 errors to http://www.dshield.org/tools/404project.html",
+  "keywords": ["connect", "security"],
+  "repository": "git://github.com/jolira/node-404project.git",
+  "author": "Joachim Kainz <jfk@jolira.com> (http://www.jolira.com)",
+  "repository": "git@github.com:jolira/node-404project.git",
+  "bugs": {
+    "mail": "dev@jolira.com",
+    "url": "http://github.com/jolira/node-404project/issues"
+  },
+  "main": "index",
+  "engines": { "node": ">= 0.4.0 < 0.7.0" }
+}
