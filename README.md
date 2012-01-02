@@ -13,6 +13,8 @@ npm install 404project
 Usage
 ---------------------
 
+### Express.js
+
 Using as a plugin for express.js:
 
 ```
@@ -26,6 +28,8 @@ app.use(reporter(myUserID, myKey));
 app.listen(3000);
 ```
 
+### Connect.js
+
 The same code also works for connect.js. Just replace
 
 ```
@@ -37,6 +41,8 @@ with
 ```
 var express = require("connect");
 ```
+
+### Other Frameworks
 
 Users of different frameworks can call the functionreturned by ``reporter(myUserID, myKey)`` directly using:
 
@@ -57,6 +63,8 @@ var report = reporter(myUserID, myKey);
 report(url, ip, ua, timestamp);
 // ...
 ```
+
+### Command-Line Support
 
 There is also a command-line tool:
 
