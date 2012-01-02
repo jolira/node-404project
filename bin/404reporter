@@ -16,7 +16,7 @@ else {
   var ip = process.argv[5];
   var ua = process.argv[6];
   var ts = process.argv[7];
-  var reporter = _404.create(userID, key);
+  var reporter = _404(userID, key);
 
-  reporter.report404(url, ip, ua, ts);
+  reporter(url, ip, ua, ts);
 }

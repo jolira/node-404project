@@ -1,8 +1,8 @@
 {
   "name": "404project",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Report 404 errors to http://www.dshield.org/tools/404project.html",
-  "keywords": ["security", "http", "https"],
+  "keywords": ["security", "http", "https", "connect", "express"],
   "repository": "git://github.com/jolira/node-404project.git",
   "author": "Joachim Kainz <jfk@jolira.com> (http://www.jolira.com)",
   "repository": "git@github.com:jolira/node-404project.git",
@@ -12,6 +12,9 @@
   },
   "bin": {
     "404reporter": "./bin/404reporter"
+  },
+  "devDependencies": {
+    "express": ">= 2.5.3"
   },
   "scripts": {
     "prepublish": "npm prune"
