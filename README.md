@@ -3,6 +3,9 @@ node-404project
 
 A simple client for reporting 404 server errors to the "404 project" at http://www.dshield.org/tools/404project.html.
 
+Please see the instructions at http://www.dshield.org/tools/404project.html for creating an ISC account retrieving
+the ISC ID and the Authentication key.
+
 Installation
 ---------------------
 
@@ -71,3 +74,16 @@ There is also a command-line tool:
 ```
 bin/404reporter 036742670 aaaaaaaaaaaabbcccccccccccceeeeeeeeffffff "http://www.jolira.com/__phpamdin" 125.64.23.180 jakarta
 ```
+
+Debugging
+---------------------
+
+In case of error, dshield does not provide a terrific amount of debugging support, but an message is produced
+if the value ``404project`` is part of the ``NODE_DEBUG`` environment variable.
+
+```
+export NODE_DEBUG="404project"
+```
+
+The library prints ``404project: OK`` if the data was submitted correctly and ``404project: ERROR`` if it did not.
+Please double-check you ISC ID and the Authentication key in case you encounter problems.
