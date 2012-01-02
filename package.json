@@ -1,6 +1,6 @@
 {
   "name": "404project",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Report 404 errors to http://www.dshield.org/tools/404project.html",
   "keywords": ["security", "http", "https", "connect", "express"],
   "repository": "git://github.com/jolira/node-404project.git",
