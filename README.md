@@ -13,15 +13,49 @@ npm install 404project
 Usage
 ---------------------
 
+Using as a plugin for express.js:
+
 ```
 var express = require("express");
 var reporter = require("404project");
 var myUserID = process.argv[2] || "[Your ISC ID]";
 var myKey = process.argv[3] || "[Your Authentication Key]";
-var app = module.exports = express.createServer();
+var app = express.createServer();
 
 app.use(reporter(myUserID, myKey));
 app.listen(3000);
+```
+
+The same code also works for connect.js. Just replace
+
+```
+var express = require("express");
+```
+
+with
+
+```
+var express = require("connect");
+```
+
+Users of different frameworks can call the functionreturned by ``reporter(myUserID, myKey)`` directly using:
+
+```
+// ...
+var report = reporter(myUserID, myKey);
+
+report(request, response);
+// ...
+```
+
+or
+
+```
+// ...
+var report = reporter(myUserID, myKey);
+
+report(url, ip, ua, timestamp);
+// ...
 ```
 
 There is also a command-line tool:
