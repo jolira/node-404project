@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/jolira/node-404project.png)](http://travis-ci.org/jolira/node-404project)
 node-404project
 =====================
 
